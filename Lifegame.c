@@ -259,6 +259,8 @@ void design(){
 }
 
 void run(int **p){
+    int row;
+    int col;
     char IMPUT,buf[BUFLEN];
     int SYMBOL=1;
 	while(1){
@@ -274,10 +276,22 @@ void run(int **p){
 	 else if(IMPUT=='\\'){
 	 	 printf("%c",IMPUT);
 	     IMPUT=getchar();
-	     fflush(stdin); 
+	     fflush(stdin);
+         for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                if(p[i][j]=0){
+                    int count=0;
+                    count++;
+                }
+            }
+         } 
          if (IMPUT=='E'){
          printf("Exit the automatic mode\n");
          break;
+         }
+         else if(count==i*j){
+            printf("Exit the automatic mode\n");
+            break;
          }
 	}
 	} 
